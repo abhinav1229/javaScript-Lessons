@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+    <script>
+        // we can put Objects inside the array as array elements
+
+        var employees = [
+            {name : 'Subham Kalpe', age : 35, workField : 'Software'}, 
+            {name : 'Abhimanyu Sharma', age : 22, workField : 'Operating System'},
+            {name : 'Subhi Shukla', age : 28, workField : 'Data Management'}, 
+            {name : 'Alka Rathor', age : 40, workField : 'Web Development'}
+        ];
+
+        console.log(employees);
+        for(var i = 0; i<employees.length; i++) {
+            document.write(employees[i].name + ' ' + employees[i].age + ' ' + employees[i].workField + "<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

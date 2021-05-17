@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some and Every</title>
+    <script>
+         // some() method : Checks if any of the element in an array pass a test
+         //        Syntax : some(any_function())
+        document.write("<p style='color: red'>some()</p>");
+         var boysAges = [17, 15, 16, 14];
+         document.write("Ages are : " + boysAges + "<br>");
+
+         var exist = boysAges.some(checkAdult);
+         document.write("Is atleast one Boy Adult here ?  " + exist + "<br><br>");
+
+         function checkAdult(age) {
+             return age >= 18;
+         }
+
+         var girlsAges = [20, 17, 16, 18];
+         document.write("Ages are : " + girlsAges + "<br>");
+
+         var exist = girlsAges.some(checkAdult);
+         document.write("Is atleast one Girl Adult here ?  " + exist + "<br>");
+
+         function checkAdult(age) {
+             return age >= 18;
+         }
+
+         // every() method : Every element in an array must pass a test
+         //        Syntax : every(any_function())
+         document.write("<hr>")
+        document.write("<p style='color: red'>every()</p>");
+         var boysAges = [17, 16, 18, 20];
+         document.write("Ages are : " + boysAges + "<br>");
+
+         var exist = boysAges.every(checkAdult);
+         document.write("Is every Boy Adult here ?  " + exist + "<br><br>");
+
+         function checkAdult(age) {
+             return age >= 18;
+         }
+
+         var girlsAges = [20, 18, 19, 21];
+         document.write("Ages are : " + girlsAges + "<br>");
+
+         var exist = girlsAges.every(checkAdult);
+         document.write("Is every Girl Adult here ?  " + exist + "<br>");
+
+         function checkAdult(age) {
+             return age >= 18;
+         }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

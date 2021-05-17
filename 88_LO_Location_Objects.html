@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Object</title>
+    <script>
+        /*
+            Location Object Properties  (URL bar)
+            >> hash
+            >> host
+            >> hostname
+            >> href
+            >> origin
+            >> pathname
+            >> port
+            >> protocol
+            >> search
+
+            Location Object Methods
+            >> assign()
+            >> reload()
+            >> replace()
+        */ 
+
+    </script>
+</head>
+<body>
+
+
+    <button onclick="newFunction()">Google</button>
+    <button onclick="pageReload()">Reload</button>
+    <button onclick="assignPage()">Assign Google</button>
+    <button onclick="replaceGoogle()">Replace Google</button><br><br>
+    <script>
+        // console.log(location);
+        // console.log(location.host);
+        // console.log(location.hostname);
+        // console.log(location.href);
+        // console.log(location.port);
+        // console.log(location.protocol);
+        // console.log(location.hash);
+        // console.log(location.search);
+
+        document.write(location + "<br>");
+        document.write(location.host + "<br>");
+        document.write(location.hostname + "<br>");
+        document.write(location.href + "<br>");
+        document.write(location.port + "<br>");
+        document.write(location.protocol + "<br>");
+        document.write(location.hash + "<br>");
+        document.write(location.search + "<br>");
+
+        function newFunction() {
+            location.href = "https://www.google.com";
+        }
+
+        function pageReload() {
+            location.reload();
+        }
+
+        function assignPage() {
+            location.assign("https://www.google.com");
+        }
+
+        function replaceGoogle() {
+            location.replace("https://www.google.com");
+        }
+    </script>
+</body>
+</html>

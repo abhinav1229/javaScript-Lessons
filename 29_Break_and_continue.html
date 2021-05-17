@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue</title>
+    <script>
+        /*
+            break    : break the loop iteration
+            continue : continue the loop iteration excepting continue condition
+        */ 
+
+        for (var token = 10 ; token > 0 ; token--) {
+            if(token % 3 == 0) {
+                document.write("Invalid Tokens<br>")
+                continue;
+            } 
+            if(token == 7) {
+                document.write("Lucky Token<br>");
+                break;
+            }
+            document.write("Your have a token <br>");
+        }
+        document.write("Token over");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

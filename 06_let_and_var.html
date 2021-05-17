@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var and let</title>
+    <script>
+        /* var :
+                >> you can modify the value again at any location in code.
+                >> you can use "var" keyword   again with same variable  :: means can declare again
+          let  : 
+                >> you can modify the value again at any location in code.
+                >> you can't use "let" keyword  again with same variable :: means can't declare again
+                    |> error : Identifier '<variale_name>' has already been declared
+
+          const:
+                >> you can't modify the value again at any location in code.
+                    |> error: assignment to constant variable.
+                >> you can't use "const" keyword  again with same variable :: means can't declare again.
+                    |> error: Identifier '<variale_name>' has already been declared
+        */
+       var animal = "Lion";
+       animal = "Tiger";
+       document.write(animal,"<br>");      // Tiger
+
+       let phone = "apple";
+       phone = "google-plex";     
+       document.write(phone,"<br>");       // google-plex
+
+       var language = "JAVA";
+       var language = "python";
+       document.write(language,"<br>");    //python
+
+        let color = "blue";
+        // let color = "red";
+        document.write(color,"<br>");      //blue 
+
+        const pi = 3.14;
+        // pi = 3.22;       
+        // const pi = 3.14;
+        document.write(pi);                 //3.14
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM_WIN_open and close</title>
+    <script>
+        /* Window opena nd close methods
+
+        >> open() method
+            -:-> window.open(URL, name, specs)
+                > URL   | https://google.com
+                > name  | firstWindow or (_blank, _parent, _self, _top) 
+                > specs | specification (Width, Height, Left, Top)
+                **All are optional
+        >> close() method
+
+        */ 
+
+    </script>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">close Window</button>
+
+
+    <script>
+        var myWindow;
+        function openWindow() {
+            // window.open();
+            // window.open("https://www.google.com/", "_blank");
+            myWindow = window.open("https://www.google.com/", "_blank", "width=500px, height=300px, left=100px, top=200px");
+        }
+
+        function closeWindow() {
+            myWindow.close();
+        }
+    </script>
+</body>
+</html>

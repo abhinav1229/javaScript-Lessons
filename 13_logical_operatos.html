@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators</title>
+    <script>
+        /* Types of logical operatos
+        1. &&   : Logical AND       :> true && true       >> true
+        2. ||   : Logical OR        :> true || false/true >> true
+        3. !    : Logical NOT       :> !false             >> true
+        */
+
+        var gpa = 9.8;
+        if(gpa > 3.4 && gpa < 5.5) {
+            document.write("2nd division");
+        }
+        if(gpa < 3.4) {
+            document.write("Failed");
+        }
+        if(gpa > 5.5 && gpa < 9.5) {
+            document.write("1st Division");
+        }
+        if(gpa > 9.5) {
+            document.write("Topper");
+        }
+
+        document.write("<br>");
+        var city = "mumbai";
+        if(city == "delhi" || city == "mumbai") {
+            document.write("You are in INDIA");
+        }
+        if(city == "california" || city == "washington") {
+            document.write("You are in AMERICA");
+        }
+        
+        document.write("<br>");
+        var age = 39;
+        if(!(age > 18)) {
+            document.write("You can not drive")
+        }
+        if(!(age <= 18)) {
+            document.write("You can drive");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

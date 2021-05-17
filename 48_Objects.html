@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        // Ojects : advanced version of array 
+        //         >> using key value method
+        //         >> use curly braces 
+        //         >> values are stored in indexName
+        //         >> property seperated by comma
+        //         >> between key(property) and value ':' is must
+        var intro = {
+            fname : "Ankur",
+            lname : "Maurya",
+            rollNumber : 20,
+            age : 19,
+            college : "REC Banda",
+            course : "B.Tech",
+            SGPA : 8.9,
+            year : 2,
+            isFailed : false
+        };
+
+        // document.write(into);
+        console.log(intro);
+        document.write("First Name: " + intro.fname + "<br>");
+        document.write("Last Name: " + intro.lname + "<br>");
+        document.write("Course: " + intro.course + "<br>");
+        document.write("Age: " + intro.age + "<br>");
+
+        document.write("<hr>");
+        //array inside the object
+        var rating = {
+            Avenger : 8.9,
+            Tenet : 7.6,
+            Intersteller : 8.8,
+            SherlockHolems : 7.9,
+            worstRatingMovies : ['Tarnedo', 'Tsunami', 'Teleport']
+        };
+
+        document.write(rating.worstRatingMovies + "<br>");
+        document.write(rating.worstRatingMovies[0]);
+        document.write("<hr>");
+
+        //function inside the object
+        var device = {
+            deviceName : 'Laptop',
+            powerOn : function() {
+                return true;
+            },
+            powerOff : function(){
+                return false;
+            }
+        }
+
+        document.write("<br>Device is : " + device.deviceName);
+        document.write("<br> Is power On : "+ device.powerOn);
+        document.write("<br> Is power On : "+ device.powerOn());
+        document.write("<hr>");
+
+        //function using 'this' keyword
+        var data = {
+            fname : 'Sbnm',
+            lname : 'Anuragi',
+            salary : function(){
+                return 45000;
+            },
+            fullName : function(){
+                return this.fname + " " + this.lname;
+            }
+            //this is used for 'data' <- owner_name
+        }
+
+        console.log(data);
+        document.write("<br> Name of Employee : " + data.fullName());
+        document.write("<br> Salary of Employee : " + data.salary());
+
+        document.write("<hr>");
+        //object inside object
+        var parent = {
+            phone : 'iphone 11',
+            camera : 'Canon',
+            child : {
+                phone : 'iphone 12 Pro',
+                camera : 'Apple'
+            }
+        }
+        document.write("<br>Parent Phone : " + parent.phone);
+        document.write("<br>Child Phone : " + parent.child.phone);
+        document.write("<br>Parent Phone : " + parent.camera);
+        document.write("<br>Child Phone : " + parent.child.camera);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

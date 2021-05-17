@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"  id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Method</title>
+    <script>
+        /*
+        DOM traversal Methods
+
+
+        3. children
+        4. childNodes
+      
+
+        */ 
+    </script>
+
+    <style>
+        #outer {
+            height: 170px;
+            width: 485px;
+            border: 1px solid red;
+            background-color: rgba(240, 230, 94, 0.719);
+            
+        }
+
+        #inner {
+            height: 100px;
+            width: 400px;
+            border: 1px solid red;
+            background-color: #f6c4ac;
+            margin: -18px 0px -30px 38px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        #inner>div {
+            color: black;
+            height: 40px;
+            width: 40px;
+            border: 1px solid;
+            margin-left: 25px;
+            background-color: white;
+            text-align: center;
+           
+        }
+
+        h2 {
+            margin-top: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    <script src="js files/dom-02_traversal.js"></script>
+</body>
+</html>

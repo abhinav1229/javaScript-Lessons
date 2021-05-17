@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+    <script>
+        
+        //creating Date object
+        var now = new Date();
+        document.write(now + "<br>");
+        
+        //toDateString()    : return only day and date
+        document.write(now.toDateString() + "<br>");
+
+        //getDate()         : return date 
+        document.write(now.getDate() + "<br>");
+
+        //getFullYear()     : return year 
+        document.write(now.getFullYear() + "<br>");
+
+        //getMonth()        : return month number 
+        document.write(now.getMonth() + "<br>");
+
+        //getDay()          : return week day number 
+        document.write(now.getDay() + "<br>");
+
+        //you can also use past date or future date
+        var past = new Date('29 February 2000');
+        document.write(past.getDay()+ "<br>");  // use more functions
+
+        //getHours()        : return hour 
+        document.write(now.getHours() + "<br>");
+
+        //getMinutes()      : return minutes
+        document.write(now.getMinutes() + "<br>");
+
+        //getSeconds()      : return seconds
+        document.write(now.getSeconds() + "<br>");
+
+        //getMiliSeconds()  : return miliseconds
+        // document.write(now.getMilliSeconds() + "<br>");
+
+        //if you use past date in time then return according to 00:00:00:000
+
+        //setDate()        : set date and time according to the given date
+        var now = new Date();
+        now.setDate(24);
+        document.write(now + "<br>");
+
+        //setFullYear()    : set year
+        now.setFullYear(2021);
+        document.write(now + "<br>");
+
+        //setMonth()       : set month 
+        now.setMonth(4);
+        document.write(now + "<br>");
+
+        //setHours()       : set hour
+        now.setHours(12);
+        document.write(now + "<br>");
+
+        //printing full date
+        var now = new Date();
+        document.write(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

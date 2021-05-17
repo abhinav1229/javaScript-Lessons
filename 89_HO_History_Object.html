@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object</title>
+    <script>
+        /*
+            History Object Properties
+                >>length()  
+
+            History Object Methods
+                >>back()
+                >>forward()
+                >>go()
+        */ 
+    </script>
+</head>
+<body>
+    <a href="http://www.google.com">google</a>
+    <h1>JavaScript : History Object</h1>
+    <button onclick="backFunction()">Back</button>
+    <button onclick="forwardFunction()">Forward</button>
+    <button onclick="goFunction()">Go</button>
+
+
+
+    <script>
+        console.log(history);
+        console.log(history.length);    //how many pages you have opened
+
+        function backFunction() {
+            history.back();
+        }
+
+        function forwardFunction() {
+            history.forward();
+        }
+
+        function goFunction() {
+            history.go(1);  //forward 1 page
+            history.go(-1); //backward 1 page
+        }
+    </script>
+
+</body>
+</html>

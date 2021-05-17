@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global And Local Variable</title>
+    <script>
+        /*
+            Local Variable : declared inside to a function 
+                            >> funciton level scope
+                            >> does not work outside the function where they declare
+            Global Variable : declare outside to a function
+                            >> enitre program level scope
+                            >> works inside the function as we as outside to a function
+                            >> does work outside the function 
+        */
+        
+        var PI = 3.14;
+        document.write("Value of PI is ", PI, "<br>");
+
+        
+        function volumeOfSphere(radius = 0) {
+            var volume = (4/3)*(PI)*(radius ** 3);
+            document.write("Radius of Circle is : ", radius, "<br>");
+            return volume;
+        }
+
+        var rad = 1;
+        var vol = volumeOfSphere(rad);
+        document.write("Volume of sphere is : ", vol, "<br>");
+        document.write("Volume of sphere is : ", volume, "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

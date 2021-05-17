@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOf and lastIndexOf</title>
+    <script>
+        /* Syntax of IndexOf() : indexOf("Search Item", start); */
+        var studentsName = ['Abhishek', 'Ananya', 'Rajat', 'Abhinav', 'Sabnam', 'Rajat'];
+        document.write("Index of Sabnam : " + studentsName.indexOf("Sabnam"));
+        document.write("<br>");
+        document.write("Index of Rajat : " + studentsName.indexOf("Rajat"));
+        document.write("<br>");
+        document.write("Index of Rajat : (after 3rd index) " + studentsName.indexOf("Rajat", 3));
+        document.write("<br>");
+        document.write("Index of Ayushman : " + studentsName.indexOf("Ayushman"));
+        
+        
+        // Syntax of lastIndexOf() : lastIndexOf("Search Item", start);
+        document.write("<br><hr>");
+        document.write("Index of Sabnam : " + studentsName.lastIndexOf("Sabnam"));
+        document.write("<br>");
+        document.write("Index of Rajat : " + studentsName.lastIndexOf("Rajat"));
+        document.write("<br>");
+        document.write("Index of Rajat : (after 3rd index) " + studentsName.lastIndexOf("Rajat", 3));
+        document.write("<br>");
+        document.write("Index of Ayushman : " + studentsName.lastIndexOf("Ayushman"));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

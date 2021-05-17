@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concat and join</title>
+    <script>
+        // concat() : merging of two array
+
+        var positiveNumbers = [1, 2, 3, 4, 5];
+        var negativeNumbers = [-1, -2, -3, -4, -5];
+        var Integers = negativeNumbers.concat(positiveNumbers);
+        document.write("Integers : " + Integers);
+        var zero = 0;
+        var NaturalNumber = negativeNumbers.concat(zero, positiveNumbers);
+        document.write("<br>Natural Numbers : " + NaturalNumber);
+
+        var years = [2019, 2020];
+        var newYear = years.concat(2021, 2022, 2023);
+        document.write("<br><br>Years : " + newYear);
+
+
+        // join()  : join multiple values into single
+
+        var nameOfMJO_character = ["Bhadra", "Bhanu", "Bharat", "Milap"];
+        var name = nameOfMJO_character.join("-");
+        document.write("<br><br>king Name : " + name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

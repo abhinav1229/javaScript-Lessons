@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <script>
+        /*
+            string: between single or double quote.
+                Example: >> 'a'
+                         >> "a"
+                         >> 'abhinav'
+                         >> "abhiav"
+                         >> "abhinav Information Technology"
+                         >> 'abhinav Information Technology'
+                         >> '1'
+                         >> '6.67'
+
+            number: float or digits number.
+                Example: >> 1
+                         >> 1.34
+                         >> 1e3  (1 x 10^(3) == 1000)
+
+            boolean: either 'true' or 'false'
+                Example: >> true
+                         >> flase
+
+            Array: store muliple value of different data types between -> []
+                Example: >> [1, 2, 4, 5, 6]
+                         >> ["JS", "java", "C++"]
+                         >> [1, 1.23, "Apple", true]
+
+            Object: key value pairs between -> {}
+                Example: >> {name: "Sana", roll_number: 23}
+                         >> {"people_at_home": 5, isStart: false}
+
+            Null: nothing
+                Example: >> null
+            
+            Undefined: undefined any variable
+                Example: >> undefined
+            
+            */
+
+
+           var courseName = "JavaScript Basic To Advance";
+           document.write(courseName);
+           document.write(" ("+typeof(courseName)+") ");
+           document.write("<br>");
+
+           var highSchoolGrade = 'a';
+           document.write(highSchoolGrade);
+           document.write(" ("+typeof(highSchoolGrade)+") ");
+           document.write("<br>");
+
+           var IntermediateRollNumber = 1957256;
+           document.write(IntermediateRollNumber);
+           document.write(" ("+typeof(IntermediateRollNumber)+") ");
+           document.write("<br>");
+
+           var percentageInHighSchool = 94.1;
+           document.write(percentageInHighSchool);
+           document.write(" ("+typeof(percentageInHighSchool)+") ");
+           document.write("<br>");
+           
+           var isFail = false;
+           document.write(isFail);
+           document.write(" ("+typeof(isFail)+") ");
+           document.write("<br>");
+
+           var subjectsName = ['Mathematics', "Physics", "Chemistry"];
+           document.write(subjectsName);
+           document.write(" ("+typeof(subjectsName)+") ");
+           document.write("<br>");
+
+           var numberOfTeacherToSubject = {Mathematics: 2,
+                                            Chemistry: 3, 
+                                            Physics: 1};
+            document.write(numberOfTeacherToSubject);
+           document.write(" ("+typeof(numberOfTeacherToSubject)+") ");
+           document.write("<br>");
+
+
+           var notAssigningAnyValue;
+           document.write(notAssigningAnyValue);
+           document.write(" ("+typeof(notAssigningAnyValue)+") ");
+           document.write("<br>");
+
+           var justANull = null;
+           document.write(justANull);
+           document.write(" ("+typeof(justANull)+") ");
+           document.write("<br>");
+
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

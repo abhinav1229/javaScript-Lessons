@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Method</title>
+    <script>
+        //ceil(x)    : return upper value of real number
+        var num = Math.ceil(2.3);
+        document.write(num + "<br>");
+        var num = Math.ceil(-2.3);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //floor(x)   : return lower value of real number
+        var num = Math.floor(2.3);
+        document.write(num + "<br>");
+        var num = Math.floor(-2.3);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //round(x)   : return value according to rounding off rule
+        var num = Math.round(2.34);
+        document.write(num + "<br>");
+        var num = Math.round(2.50);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //trunc(x)   : return integer value of real number no decimaltrunc
+        var num = Math.trunc(2.34);
+        document.write(num + "<br>");
+        var num = Math.trunc(2.50);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //max(a, b, c, ...)     : return max value from a, b, c, ...
+        var num = Math.max(2, 56, 78, 21)
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //min(a, b, c, ...)     : return min value from a, b, c, ...
+        var num = Math.min(2, 56, 78, 21)
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //sqrt(x)        : return sqare root of a number
+        var num = Math.sqrt(16);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //cbrt(x)        : return cube root of a number
+        var num = Math.cbrt(27);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //pow(x, y)      : return power of base(x) to the power(y)
+        var num = Math.pow(2, 3);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //random()      : return random number(by default between 0 to 1)
+        var num = Math.random();
+        document.write(num + "<br>");
+        var num = Math.floor(Math.random() * 10) + 1;   // between 1 to 10
+        document.write(num + "<br>");
+        
+        document.write("<hr>");
+        //abs(x)    : return absolute value of x {if -x then x}
+        var num = Math.abs(-12);
+        document.write(num + "<br>");
+        var num = Math.abs(2);
+        document.write(num + "<br>");
+        var num = Math.abs(-true);
+        document.write(num + "<br>");
+        var num = Math.abs('hello');
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        var num = Math.PI
+        document.write(num);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

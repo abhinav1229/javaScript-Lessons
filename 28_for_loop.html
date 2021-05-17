@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+    <script>
+        /* Syntax
+
+            for (initialization ; condition ; increment/decrement) {
+                statements...
+            }
+
+        */ 
+            
+        for(var age = 1 ; age <= 18 ; age++) {
+            if(age > 0 && age < 5)
+                document.write(age+ ">>You are now baby<br>");
+            else if(age >= 5 && age < 10)
+            document.write(age+ ">>You are now kid <br>");
+            else if(age >= 10 && age < 15)
+                document.write(age+ ">>You are becoming teenager <br>");
+            else if(age >= 15 && age < 18)
+                document.write(age+ ">>You are now teenager <br>");
+            else if(age == 18)
+                document.write(age+ ">>You can now vote <br>");
+            else
+                document.write(age+ ">>You are not born yet<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

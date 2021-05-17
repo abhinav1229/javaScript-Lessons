@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+    <script>
+        //forEach()  : 
+        var devices = ['laptop', 'phone', 'charger', 'battery'];
+
+        devices.forEach(function(value, index) {
+            document.write(index + " : " + value + "<br>");
+        });
+
+        devices.forEach(doSomething);
+
+        function doSomething(value) {
+            document.write("Using..." + value + "<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

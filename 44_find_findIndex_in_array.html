@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find and findIndex</title>
+    <script>
+        /* findIndex() method rturns the index of the first element in an array that pass a test. */
+        document.write("<p style='color: red'>find()</p>");
+         var boysAges = [16, 19, 18, 21];
+         document.write("Ages are : " + boysAges + "<br>");
+
+         var exist = boysAges.find(checkAdult);
+         document.write("Age of first adult student standing on row?  " + exist + "<br>");
+
+         function checkAdult(age) {
+             return age >= 18;
+         }
+
+        document.write("<p style='color: red'>findIndex()</p>");
+        var exist = boysAges.findIndex(checkAdult);
+        document.write("Index of first adult student standing on row?  " + exist + "<br><br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

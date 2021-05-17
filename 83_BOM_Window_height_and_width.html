@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Win-Height and width</title>
+    <script>
+        /* 
+            Window Height and Width Method
+            >> innerHeight
+            >> innerWidth
+            >> outerHeight
+            >> outerWidth
+    */ 
+    </script>
+</head>
+<body onresize="resizeFunction()">
+    
+
+    <script>
+
+        function resizeFunction() {
+        console.clear();
+        var iHeight = window.innerHeight;
+        console.log("inner Height " + iHeight);
+
+        var oHeight = window.outerHeight;
+        console.log("outer Height " + oHeight);
+
+        var iWidth = window.innerWidth;
+        console.log("inner Height " + iWidth);
+
+        var oWidth = window.outerWidth;
+        console.log("outer Height " + oWidth);
+        }
+       
+    </script>
+</body>
+</html>

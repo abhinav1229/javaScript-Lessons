@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script>
+        var str = "JavaScript is cool.";
+        //length method         : length of string
+        document.write(str.length + "<br>");
+
+        //toLowerCase() method  : string letters convert into lowerCase 
+        document.write(str.toLowerCase() + "<br>");
+
+        //toUpperCase() method  : string letters convert into UpperCase
+        document.write(str.toUpperCase() + "<br>");
+
+        //includes() method     : find any particular string, number or char in string (case-Sensitive)
+        document.write(str.includes('cool') + "<br>");
+        document.write(str.includes('COOL') + "<br>");
+        document.write(str.includes('not') + "<br>");
+
+        // startsWith() method  : search in only first word in string (case- Sensitive)
+        document.write(str.startsWith('Java')+ "<br>");
+        document.write(str.startsWith('JAVA')+ "<br>");
+
+        // endsWith() method    : search in only last word in string (case-sensitive)
+        document.write(str.endsWith('ool.')+ "<br>");
+        document.write(str.endsWith('COol.')+ "<br>");
+
+        //search() method       : returns index of search item in string 
+        document.write(str.search('cool')+ "<br>");
+        document.write(str.search('hot')+ "<br>");
+
+        //match() method        : returns array of searched word in string
+        document.write(str.match(/is/g)+ "<br>" );   // g stands for globally
+
+        //indexOf() method      : returns first index of search item from start
+        document.write(str.indexOf("is")+ "<br>");
+
+        //lastIndexOf() method  : returns first index of search item from end
+        document.write(str.lastIndexOf("is") + "<br>");
+
+        //replace() method      : replace one `word` from another `word`
+        document.write(str.replace('cool', 'smooth')+ "<br>");
+
+        //trim() method         : remove extra spaces from left and right from a string
+        document.write(str.trim()+ "<br>");
+
+        //charAt() method       : returns character at given index
+        document.write(str.charAt(0)+ "<br>");
+        document.write(str.charAt(30)+ "<br>");
+
+        //charCodeAt() method   : return ASCII table value
+        document.write(str.charCodeAt(3)+ "<br>");
+        document.write(str.charCodeAt(20)+ "<br>");
+        
+        //fromCharCode() method : return value of ASCII code
+        document.write(String.fromCharCode(65)+ "<br>");
+
+        //concat() method       : concat two strings in one
+        var str2 = "You Know !";
+        document.write(str2.concat(str)+ "<br>");
+
+        //split() method        : return an array of word of string
+        document.write(str.split(' ')+ "<br>");
+        document.write(str.split('a')+ "<br>");
+
+        //repeat() method       : repeats any string by given number
+        document.write(str.repeat(2)+ "<br>");
+
+        //slice() method        : pickup any character or string form middle of given string
+        document.write(str.slice(4)+ "<br>");
+        document.write(str.slice(-5)+ "<br>");
+
+        //substr() method       : returns an string start form firstIndex which have length = (lastgivenIndex). 
+        document.write(str.substr(4,6)+ "<br>");
+
+        //subString() method    : return an string between indexes.
+        document.write(str.substring(4,6)+ "<br>"); // 6 is excluded
+
+        //toString() method     : convert non-string value to string
+        var num = 5000;
+        document.write(num.toString()+ "<br>");
+ 
+        //valueOf() method      : returns string
+        document.write(str.valueOf()+ "<br>");
+        document.write(str+ "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

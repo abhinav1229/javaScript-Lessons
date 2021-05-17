@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const with array and Object</title>
+    <script>
+        // general const variable
+        const name = 'Abhinav';
+        document.write(name);
+        // name = 'Saurabh';        // can't do
+        // document.write(name);
+
+        //array const variable
+        const cricketer = ['Virat Kohli', 'MS Dhoni', 'Rohit Sharma'];
+        document.write(cricketer);
+        cricketer[1] = 'Saurabh Ganguli';
+        document.write(cricketer);
+
+        // const cricketer = ['Lara', 'Cris', 'Watson'];        // can't do
+        // document.write(cricketer);
+
+
+        //Object const variable
+        const student = {
+            name : 'Saumya Ragni',
+            score : 34
+        };
+        document.write(student);
+        student.name = 'Manoj Bajpai';
+        document.write(student);
+
+        // const student = {                // can't do
+        //     name : 'Ravti Sagar',
+        //     score : 90
+        // };
+        // document.write(student);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

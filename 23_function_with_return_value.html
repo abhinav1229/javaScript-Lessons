@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function return</title>
+    <script>
+        function captionEnery() {
+            return 100;
+        }
+
+        function thorEnergy() {
+            var thorEnergy = 200;
+            return thorEnergy;
+        }
+
+        function tonyEnergy() {
+            return 150;
+        }
+
+        function killTheThanos() {
+            energy = thorEnergy() + captionEnery() + tonyEnergy();
+            if(energy > 350) {
+                return "Thonos Killed";
+            }  else {
+                return "Thanos Safe";
+            }
+        }
+
+        var killedOrNot = killTheThanos();
+        document.write(killedOrNot);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <script>
+        //Number()      : convert string, boolean values into number
+        var str = '99';
+        var num = Number(str);
+        document.write(num + "<br>");
+        var bool = true;
+        var num = Number(bool);
+        document.write(num + "<br>");
+        var str = '99 1';
+        var num = Number(str);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //parseInt()    : return non decimal integers
+        var str = '99.90';
+        var num = parseInt(str);
+        document.write(num + "<br>");
+        var real = 99.90;
+        var num = parseInt(real);
+        document.write(num + "<br>");
+        var str = '50 89 year';
+        var num = parseInt(str);
+        document.write(num + "<br>");
+        var str = 'year 2013';
+        var num = parseInt(str);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //parseFloat()  : return real number
+        var str = '99.90';
+        var num = parseFloat(str);
+        document.write(num + "<br>");
+        var real = 3.96;
+        var num = parseFloat(real);
+        document.write(num + "<br>");
+        var str = '50 89 year';
+        var num = parseFloat(str);
+        document.write(num + "<br>");
+        var str = 'year 2013';
+        var num = parseFloat(str);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //isFinite()    : if number is countable then return 'true' else 'false'
+        var str = '100';
+        var num = isFinite(str);
+        document.write(num + "<br>");
+        var real = -2433.4;
+        var num = isFinite(real);
+        document.write(num + "<br>");
+        var real = Infinity;
+        var num = isFinite(real);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //isInteger()   : if value is integer then return 'true' else 'false'
+        var real = 10.5;
+        var num = Number.isInteger(real);
+        document.write(num + "<br>");
+        var str = '10';
+        var num = Number.isInteger(str);
+        document.write(num + "<br>");
+        var bool = false;
+        var num = Number.isInteger(bool);
+        document.write(num + "<br>");
+        var integer = 129;
+        var num = Number.isInteger(integer);
+        document.write(num + "<br>");
+
+        
+        document.write("<hr>");
+        //tofixed()     : return real number upto given decimal number
+        var real = 1.3247823;
+        var num = real.toFixed(3);
+        document.write(num + "<br>");
+        var real = 12.99;
+        var num = real.toFixed(1);
+        document.write(num + "<br>");
+
+        document.write("<hr>");
+        //toPrecision() : return precise value
+        var real = 1.3247823;
+        var num = real.toPrecision(3);
+        document.write(num + "<br>");
+        var real = 12.99;
+        var num = real.toPrecision(1);
+        document.write(num + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

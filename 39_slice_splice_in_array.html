@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice and Splice</title>
+    <script>
+        // slice() : takes two values start<where you want to cut> and end<just after this you waant to cut>
+        var videoTiming = ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00'];
+        document.write("Video Timing : " + videoTiming);
+        document.write("<br>Slicing main part...");
+        var newVideoTiming = videoTiming.slice(1, 4);
+        document.write("<br>Video Timing : ", newVideoTiming);
+        document.write("<br>Slicing code timing only...");
+        var codeTiming = newVideoTiming.slice(1);
+        document.write("<br>Video Timing : ", codeTiming);
+        var reversVideo = videoTiming.slice(-3);
+        document.write("<br>Slicing at end...");
+        document.write("<br>Video Timing : ", reversVideo);
+
+        //splice() :Insertion of values at mid
+        //          >> splice(index, how-Many-Delete, "new-value")
+        //          >> change into exiting array
+        document.write("<br><hr><br>");
+        var favMovies = ['Avenger Series', 'Intersteller', 'Tenet', 'Transformer', 'Titanic', 'Iron Man'];
+        document.write("<br>Favorite Movies List : ", favMovies);
+        favMovies.splice(1, 0, 'Captain Marvel', 'Minions');
+        document.write("<br>Adding More Favorite Movies...");
+        document.write("<br>Favorite Movies List : ", favMovies);
+        document.write("<br>Replacing Favorite Movies...");
+        favMovies.splice(4, 1, 'Mission Impossible');
+        document.write("<br>Favorite Movies List : ", favMovies);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

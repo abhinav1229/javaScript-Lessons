@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function with parameter</title>
+    <script>
+        function bioData(name, fatherName, address="None") {
+            document.write("My name is : "+ name, "<br>");
+            document.write("My father's name is : "+ fatherName, "<br>");
+            document.write("My address is : "+ address, "<br><br>");
+        }
+
+        var name = "Abhinav";
+        var fatherName = "Ashok Kumar";
+        var address = "Kanpur";
+
+        bioData(name, fatherName, address);
+        // bioData(address="Mumbai", name="Abhina", fatherName="Ashok Kumar");    does not work as you want
+
+
+        function areaOfCircle(rad=0) {
+            if(rad > 0)
+                document.write("Area of Circle is ", rad * rad * 3.14, "<br>");
+            else
+                document.write("Invalid Radius");
+        }
+        
+        var radius = 12;
+        areaOfCircle(radius);
+        areaOfCircle();
+        areaOfCircle(radius / 2);
+        areaOfCircle(radius = 1);
+        areaOfCircle(-2);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

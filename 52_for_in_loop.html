@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-In Loop</title>
+    <script>
+        // for in loop specially designed for objects
+        /* Syntax
+            for(var variableName in ObjectName) {
+                statements...
+            }
+        */ 
+            var Obj = {
+                carName : 'BMW',
+                ownerName : 'Sri Prakash',
+                yearBuy : 2018
+            };
+
+            for(var key in Obj) {
+                document.write(key + " : " + Obj[key] + "<br>");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

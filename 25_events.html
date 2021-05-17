@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+        /*     
+            List of Basic Events
+                            : --Event Name--
+            1. Click        : onclick
+            2. Double Click : ondblclick
+            3. Right Click  : oncontextmenu
+            4. Mouse Hover  : onmouseover
+            5. Mouse Out    : onmouseout
+            6. Mouse Down   : onmousedown
+            7. Mouse Up     : onmouseup
+            8. key press    : onkeypress        : work on either form or body
+            9. Key up       : onkeyup           : work on either form or body
+           10. Load         : onload            : work on either form or body
+           11. Unload       : onunload          : work on either form or body
+           12. Resize       : onresize
+           13. Scroll       : onscroll
+           14. keydown      : onkeydown
+           15. focus        : onfocus
+           16. submit       : onsubmit
+           17. blur         : onblur
+           18. change       : onchange
+                
+        */
+        function answer() {
+            document.write(8850, "m");
+        }
+
+        function systemInfo() {
+            alert("Microsoft Windows [Version 10.0.18362.1082]");
+        }
+        
+    </script>
+</head>
+<body 
+      onkeydown  ="    alert('before keypress event (keydown)')"
+      onkeypress ="    alert('This event awoke when you press any key from keyboard (keypress)')"
+      onkeyup    ="    alert('after keypress event (keyup)')"
+
+ 
+      onunload="document.write('unloading...')"
+
+      onresize="alert('you get 10 points')"
+      onscroll="alert('you get 100 points')"
+>
+<!-- onload="document.write('onloading...')" shift it on body -->
+        <p>What is the height of mount everest ?</p> <p id="height"></p>
+        <input type="submit" value="Show Answer" onclick="answer()">
+        <input type="submit" value="Show Answer" onclick="document.write(8850, 'm');">
+        <input type="submit" value="Show Answer" onclick="document.getElementById('height').innerText = '8850 m'">
+
+        <hr>
+        <p>How many states in India.</p> <p id="ans"></p>
+        <p ondblclick="document.getElementById('ans').innerText = '29'">click me Two time</p>
+
+        <hr>
+        <p>Show Windows Version</p>
+        <input type="button" value="right click" oncontextmenu="systemInfo() ">
+
+        <hr>
+        <p>Value of gravity constant 'g' is </p> <p  id="g"></p>
+        <input type="button" value="show" onmouseover="document.getElementById('g').innerText = '9.8 m/s'">
+
+        <hr>
+        <p>If you leave this button after hover you will get a surprise.</p><p id="surprise"></p>
+        <input type="button" value="Don't mouse out" onmouseout="document.getElementById('surprise').innerHTML = '<p style=\'color: red;\'>I am only red</p>'">
+
+        <hr>
+        <p>Recharge you phone By Just down your mouse from this button</p>
+        <input type="button" value="mouse down" onmousedown="alert('Rechrge successfull on your number 7985****62')"> 
+
+        <hr>
+        <p>Speed of light is </p> <p id="speed"></p>
+        <input type="button" value="mouse out" onmouseout="document.getElementById('speed').innerText = '300,000 m/s'">
+        
+        <hr>
+        <p>If you will resize your browser size then you get 10 points</p><br>
+        <p>If you will scroll the page then you will get 100 points</p>
+
+        
+</body>
+</html>

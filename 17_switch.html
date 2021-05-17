@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+    <script>
+        /*
+            switch (expression)
+            {
+                case (condition 1):
+                    statements_
+                    break;
+                case (condition 1):
+                    statements_
+                    break;
+                case (condition 1):
+                    statements_
+                    break;   
+                default:
+                    statements_ 
+            }
+        */
+
+        var numberOfForestInAPlanet = 7000;
+        var x = numberOfForestInAPlanet;
+        switch(true)
+        {
+            case (x > 0 && x <= 100):
+                document.write("Planet In Danger <br><b>WARN : </b>Plant needs more tress otherwise we die");
+                break;
+
+            case (x > 100 && x <= 1000):
+                document.write("Planet Needs More forest<br><b>WARN : </b>Insufficient forest");
+                break;
+
+            case (x > 1000 && x <= 5000):
+                document.write("Don't polute the planet<br><b>WARN : </b>Required More Tress");
+                break;
+                
+            case (x > 5000 && x <= 10000):
+                document.write("Don't Cut the trees<br><b>WARN : </b>We have limited Tress");
+                break;
+
+            case (x > 10000 && x <= 50000):
+                document.write("We are in safe zone <br><b>RECOMMEDN : </b>Make Planet Green");
+                break;
+            case (x >= 50000):
+                document.write("Green Planet<br><b>Congratulation !</b> Our planet is Green");
+                break;
+            default:
+                document.write("Scape from that planet<br><b>WARN : </b>You will die here very soon");
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasAttribute and hasChildNode</title>
+    <script>
+        /* DOM hasAttribute() Method:
+            <div id="test" class "abc">TEXT</div>
+                >>hasAttribute()
+                    ...true 
+                    ...false
+            
+            DOM hasChildNodes() Method:
+                >>hasChildNodes()
+                    ...true
+                    ...false
+        */ 
+    </script>
+
+<style>
+    #test {
+        height: 300px;
+        width: 700px;
+        background-color: khaki;
+        margin: 10px 0 0 350px;
+    }
+</style>
+</head>
+<body>
+    <div id="test">
+        <h2>JavaScript hasAttribute Method</h2>
+        <p id="para" class="graph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi odio magni natus maxime facilis fugiat, saepe quidem dignissimos itaque?</p>
+        <p id="space-para">
+            
+        </p>
+        <p id="blank-para"></p>
+    </div>
+
+    <script src="js files/dom-hasAttribute-hasChildNode.js"></script>
+</body>
+</html>

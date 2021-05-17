@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+    <script>
+        /* HTML Event Attribute
+
+        :>  <button onclick="abc()">Click</button>
+        :>  <img scr="" onmouseenter="xyz()"/>
+
+        Assign Event using HTML DOM
+        :>  document.getElementById(id).onclick = functionName;
+
+        DOM addEventListener() method
+           addEventListener(event, function, useCapture);
+        :> document.getElementById(id).addEventListener("click", functionName);
+
+        DOM removeEventListener()  method
+        :>  element.removeEventListener("ondblclick", functionName);
+       */
+    </script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>My Site</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="contact">
+            <h2>Sub Heading</h2>
+            <img src="images/1.jpg" alt="" width="300px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore id, earum laborum labore assumenda explicabo autem iure reprehenderit error omnis at praesentium repudiandae molestiae numquam ipsa, sed beatae natus sequi.
+            </p>
+            <ul class="list">
+                <li>Lorem ipsum dolor sit </li>
+                <li>Lorem ipsum dolor sit lorem</li>
+                <li>Lorem ipsum dolor sit </li>
+                <li>Lorem ipsum dolor sit lorem</li>
+                <li>Lorem ipsum dolor sit </li>
+            </ul>
+        </div>
+
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Conatct Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            rk7772534@gmail.com
+        </div>
+    </div>
+    <script src="js files/dom-event.js"></script>
+</body>
+</html>

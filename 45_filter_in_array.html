@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <script>
+        // filter() method : filter method creates an array filled with all array that fast the test
+        // filter(function_name) 
+         document.write("<p style='color: red'>filter()</p>");
+         var boysAges = [16, 19, 18, 17];
+         document.write("Ages are : " + boysAges + "<br>");
+
+         var exist = boysAges.filter(checkAdult);
+         document.write("How many boys are adult ? " + exist + "<br>");
+
+         function checkAdult(age) {
+             return age >= 18;
+         }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

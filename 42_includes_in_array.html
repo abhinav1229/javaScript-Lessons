@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>includes()</title>
+    <script>
+        /* syntax of includes() : includes(<seach_item>)
+                >> returns true if found
+                >> returns falsel if not found
+                >> includes() is case-sensitive
+        */ 
+
+            var rollNumberOfAbsentStudents = [12, 45, 89, 34, 21, 99, 44];
+            var my_status = rollNumberOfAbsentStudents.includes(21);
+            document.write("I was present in the class : ", my_status);
+
+            my_status = rollNumberOfAbsentStudents.includes(22);
+            document.write("<br>She was present in the class : ", my_status);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

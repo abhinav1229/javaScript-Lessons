@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimentional Array</title>
+    <script>
+        /* Multidimentional array
+            :: relation one data with another data
+        */
+
+        var dataOfStudents = [
+            ["Harry", 18, "Male", "B.Com"], 
+            ["Sunny", 20, "Male", "B.Tech"],
+            ["Sana", 19, "Female", "B.Tech"], 
+            ["Abhinav", 20, "Male", "B.Tech"]
+            // ["Pankaj", 20, "Male", "B.Tech"],
+            // ["Uday", 20, "Male", "B.Tech"]
+        ];
+
+        // printing complete array
+        // document.write(dataOfStudents);  
+
+
+        //printing indivisual elements
+        // for(var i=0 ; i<4 ; i++) {
+        //     for(var j=0 ; j<4 ; j++) {
+        //         document.write(dataOfStudents[i][j]+" ");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        //printing in table formate
+        document.write("<table border='1px'>");
+
+            document.write("<tr>");
+                for(var i=0 ; i<dataOfStudents.length ; i++) {
+            for(var j=0 ; j<dataOfStudents[i].length ; j++) {
+                document.write("<td>" + dataOfStudents[i][j]+" " + "</td>");
+            }
+            document.write("</tr>");
+          }
+
+        document.write("</table>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        /* constructor mathod to create array */
+
+        var star = new Array('Sun', 150, false, 8, 'He and H');
+        document.write("<ol>");
+            document.write("<li>" + "Star name of our planet : " + star[0] + "</li>"+ "<br>");
+            document.write("<li>" + "Distance between earth and sun is " + star[1] + "M Km" + "</li>"+ "<br>");
+            document.write("<li>" + "Is Sun moving slowly : " + star[2] + "</li>"+ "<br>");
+            document.write("<li>" + "How many planets are moving around sun : " + star[3] + "</li>"+ "<br>");
+            document.write("<li>" + "Which gases are responsible for hotness of sun : " + star[4] + "</li>"+ "<br>");
+        document.write("</ol>");
+        document.write("Thank You <br>" );
+
+
+        // limited value
+        var requiredObjectsForInternetUseInPhone = new Array(3);
+        requiredObjectsForInternetUseInPhone[0] = 'Browsing Phone';
+        requiredObjectsForInternetUseInPhone[1] = 'SIM card';
+        requiredObjectsForInternetUseInPhone[2] = 'Internet Pack';
+
+        document.write("<br>Required Items for Inter net use in phone <br>");
+        document.write("<ul><li>" + requiredObjectsForInternetUseInPhone[0] + "</li>");
+        document.write("<li>" + requiredObjectsForInternetUseInPhone[1] + "</li>");
+        document.write("<li>" + requiredObjectsForInternetUseInPhone[2] + "</li></ul>");
+
+        //unlimited values
+        var color = new Array();
+        color[0]    = 'red';
+        color[1]    = 'green';
+        color[2]    = 'blue';
+        color[3]    = 'green';
+        color[4]    = 'white';
+        color[5]    = 'black';
+        color[6]    = 'pink';
+        color[7]    = 'violet';
+        color[8]    = 'yellogreen';
+        document.write("Color of T-series logo : " + color[0] + "<br>");
+        document.write("Color of my hp laptop : " + color[5] + "<br>");
+        document.write("Color of wheel in indian flag : " + color[2] + "<br>");
+        document.write("Color of dress of rcb team : " + color[6] + "<br>");
+        document.write("Color of successfull complete payment : " + color[1] + "<br>");
+        document.write("Color of white house in America : " + color[4] + "<br>");
+
+        //user input
+        var isHaveDocuments = new Array(2);
+        for(var documents = 0 ; documents < 2 ; documents++) {
+            if(documents == 0)
+            isHaveDocuments[documents] = prompt("Have you Adhar Card (true/false) ? ");
+            else
+            isHaveDocuments[documents] = prompt("Is your Adhar linked with Mobile Number (true/false) ? ");
+        }
+       
+        alert("Adhar : " + isHaveDocuments[0]);
+        alert("Linked : "+  isHaveDocuments[1]);
+
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
